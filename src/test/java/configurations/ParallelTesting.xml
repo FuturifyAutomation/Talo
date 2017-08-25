@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNgMavenSuite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="supports.ExcelReport"/>
+    </listeners>
+    <test name="HTC">
+        <parameter name="sDeviceName" value="LC6B4B402499"/>
+        <parameter name="sPlatformVersion" value="4.4.2"/>
+        <parameter name="sURL" value="http://127.0.0.1:1234/wd/hub"/>
+        <parameter name="sPhoneNumber" value="0999999110"/>
+        <parameter name="sPassword" value="qqqqqq"/>
+        <parameter name="sFirstName" value="Dau"/>
+        <parameter name="sLastName" value="Nguyen"/>
+        <!--Execute all classes in package
+        <packages>
+            <package name="modules"/>
+        </packages>
+        Execute simple class-->
+        <classes>
+            <!--<class name="modules.LearnLessonInMyEducation"/>-->
+            <!--<class name="modules.LearnToBuyANewHouse"/>-->
+            <!--<class name="modules.LearnToGetMarried"/>-->
+            <!--<class name="modules.LearnToPlanRetirement"/>-->
+            <class name="modules.ManageAccount"/>
+            <!--<class name="modules.PlanForRetirement"/>-->
+            <!--<class name="modules.PlanToBuyNewHouse"/>-->
+            <!--<class name="modules.ManageAccount"/>-->
+        </classes>
+    </test>
+
+    <test name="J7">
+    <parameter name="sDeviceName" value="33002399be31526b"/>
+    <parameter name="sPlatformVersion" value="6.0.1"/>
+    <parameter name="sURL" value="http://127.0.0.2:5678/wd/hub"/>
+    <parameter name="sPhoneNumber" value="0999999111"/>
+    <parameter name="sPassword" value="qqqqqq"/>
+    <parameter name="sFirstName" value="Dau"/>
+    <parameter name="sLastName" value="Nguyen"/>
+    <classes>
+        <!--<class name="modules.LearnLessonInMyEducation"/>-->
+        <!--<class name="modules.LearnToBuyANewHouse"/>-->
+        <!--<class name="modules.LearnToGetMarried"/>-->
+        <!--<class name="modules.LearnToPlanRetirement"/>-->
+        <class name="modules.ManageAccount"/>
+        <!--<class name="modules.PlanForRetirement"/>-->
+        <!--<class name="modules.PlanToBuyNewHouse"/>-->
+        <!--<class name="modules.PlanToGetMarried"/>-->
+    </classes>
+    </test>
+</suite>

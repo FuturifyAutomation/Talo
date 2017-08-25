@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Talo" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="supports.ExcelReport"/>
+    </listeners>
+    <test name="HTC">
+        <parameter name="sDeviceName" value="LC6B4B402499"/>
+        <parameter name="sPlatformVersion" value="4.4.2"/>
+        <parameter name="sURL" value="http://0.0.0.0:4723/wd/hub"/>
+        <parameter name="sPhoneNumber" value="0999999456"/>
+        <parameter name="sPassword" value="qqqqqq"/>
+        <parameter name="sFirstName" value="Dau"/>
+        <parameter name="sLastName" value="Nguyen"/>
+        <!--Execute all classes in package
+        <packages>
+            <package name="modules"/>
+        </packages>
+        Execute simple class-->
+        <classes>
+            <!--<class name="modules.LearnLessonInMyEducation"/>-->
+            <!--<class name="modules.LearnToBuyANewHouse"/>-->
+            <!--<class name="modules.LearnToGetMarried"/>-->
+            <!--<class name="modules.LearnToPlanRetirement"/>-->
+            <!--<class name="modules.ManageAccount"/>-->
+            <!--<class name="modules.PlanForRetirement"/>-->
+            <!--<class name="modules.PlanToBuyNewHouse"/>-->
+            <class name="modules.ManageAccount"/>
+            <!--<class name="modules.newTestCase"/>-->
+        </classes>
+    </test>
+
+    <!--<newTestCase name="J2">-->
+        <!--<parameter name="sDeviceName" value="9201347300c483bd"/>-->
+        <!--<parameter name="sPlatformVersion" value="5.1.1"/>-->
+        <!--<parameter name="sURL" value="http://0.0.0.0:4723/wd/hub"/>-->
+        <!--<parameter name="sPhoneNumber" value="09999999580"/>-->
+        <!--<parameter name="sPassword" value="qqqqqq"/>-->
+        <!--<parameter name="sFirstName" value="Dau"/>-->
+        <!--<parameter name="sLastName" value="Nguyen"/>-->
+        <!--<classes>-->
+            <!--&lt;!&ndash;<class name="modules.LearnLessonInMyEducation"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.LearnToBuyANewHouse"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.LearnToGetMarried"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.LearnToPlanRetirement"/>&ndash;&gt;-->
+            <!--<class name="modules.ManageAccount"/>-->
+            <!--&lt;!&ndash;<class name="modules.PlanForRetirement"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.PlanToBuyNewHouse"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.PlanToGetMarried"/>&ndash;&gt;-->
+        <!--</classes>-->
+    <!--</newTestCase>-->
+
+    <!--<newTestCase name="Nexus">-->
+        <!--<parameter name="sDeviceName" value="00c274641540bbc3"/>-->
+        <!--<parameter name="sPlatformVersion" value="7.1.1"/>-->
+        <!--<parameter name="sURL" value="http://0.0.0.0:4723/wd/hub"/>-->
+        <!--<parameter name="sPhoneNumber" value="0999998101"/>-->
+        <!--<parameter name="sPassword" value="qqqqqq"/>-->
+        <!--<parameter name="sFirstName" value="Dau"/>-->
+        <!--<parameter name="sLastName" value="Nguyen"/>-->
+        <!--<classes>-->
+            <!--&lt;!&ndash;<class name="modules.LearnLessonInMyEducation"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.LearnToBuyANewHouse"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.LearnToGetMarried"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.LearnToPlanRetirement"/>&ndash;&gt;-->
+            <!--<class name="modules.Nexus_ManageAccount"/>-->
+            <!--&lt;!&ndash;<class name="modules.PlanForRetirement"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.PlanToBuyNewHouse"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.PlanToGetMarried"/>&ndash;&gt;-->
+        <!--</classes>-->
+    <!--</newTestCase>-->
+
+    <!--<newTestCase name="J7">-->
+        <!--<parameter name="sDeviceName" value="33002399be31526b"/>-->
+        <!--<parameter name="sPlatformVersion" value="6.0.1"/>-->
+        <!--<parameter name="sURL" value="http://0.0.0.0:4723/wd/hub"/>-->
+        <!--<parameter name="sPhoneNumber" value="09999999580"/>-->
+        <!--<parameter name="sPassword" value="qqqqqq"/>-->
+        <!--<parameter name="sFirstName" value="Dau"/>-->
+        <!--<parameter name="sLastName" value="Nguyen"/>-->
+        <!--<classes>-->
+            <!--&lt;!&ndash;<class name="modules.LearnLessonInMyEducation"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.LearnToBuyANewHouse"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.LearnToGetMarried"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.LearnToPlanRetirement"/>&ndash;&gt;-->
+            <!--<class name="modules.ManageAccount"/>-->
+            <!--&lt;!&ndash;<class name="modules.PlanForRetirement"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.PlanToBuyNewHouse"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<class name="modules.PlanToGetMarried"/>&ndash;&gt;-->
+        <!--</classes>-->
+    <!--</newTestCase>-->
+</suite>
